@@ -1,0 +1,309 @@
+/* ------------------------------------------------------menu---------------------------------------------------- */
+*{
+    font-family: 'Bruno Ace SC', cursive;
+    padding: 0%;
+    margin: 0%;
+}
+
+.titulomenu{
+    background-color: rgba(238, 10, 10, 0.74);
+    text-align: center;
+    display: flex;
+    width: 220px;
+    margin-left: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 25px;
+    
+
+}
+
+nav{
+    background: #1c2541;
+    height: 82px;
+    width: 100%;
+}
+
+.elace{
+    position: center;
+    padding: 20px 50px;
+}
+
+.logo2{
+    height: 40px;
+    display: inline-flex;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ul li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }    
+}
+
+/* ------------------------------------------------------menu--------------------------------------------- */
+/* -----------------------------------------------------pestañaIndex--------------------------------------------- */
+
+body section{
+   
+    background-position: center center;
+    height: calc(100vh - 80px); 
+    width: 100%;
+
+}
+
+.maine{
+    background-image: url(../img/frio-calor.jpg);
+    height: 98vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo1{
+    text-align: center;
+    font-size: 35px;
+}
+.titulo2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.articulo1{
+    width: 800px;
+    height: 400px;        
+}
+/*------------------------------------------------finpestañaIndex--------------------------------------------*/
+
+/* -----------------------------------------------Pestañafooter----------------------------------------------- */
+.pie-pagina{
+    width: 100%;
+    background-color: #1c2541;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(239,184,16);
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(54, 170, 170);
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #efefef;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+/* -----------------------------------------------FinPestañafooter----------------------------------------------- */
+
+
+/* -----------------------------------------------PestañaContacto----------------------------------------------- */
+.conteiner{
+    display: flex;
+    background-color: #5BC0BE;
+}
+.conteiner-form{     
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px ;
+    margin-left: 15px;
+}
+.conteiner-form h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.conteiner-form p{
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.conteiner-form a{
+    font-size: 17px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;    
+}
+.conteiner-form a i{
+    color:#2c3e50;
+    margin-right: 10px;
+}
+.conteiner-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid #0a1a2a;
+}
+/* -----------------------------------------------FinPestañaContacto----------------------------------------------- */
+/* -----------------------------------------------pestañatrabajos----------------------------------------------- */
+.trabajos{
+    background-color: #5BC0BE;
+    display: flex;
+}
+.trabajos-1{
+    width: 50%;
+    margin: 30px 15px;
+}
+.imagentrabajo1{
+    margin-top: 10px;
+    width: 640px;
+    height: 360px;
+}
+.trabajos-2{
+    width: 50%;
+    margin: 30px 15px;
+}
+.trabajos-1 h1{
+    text-align: center;
+}
+.trabajos-2 h2{
+    text-align: center;
+}
+/* -----------------------------------------------FinPestañatrabajos----------------------------------------------- */
+
+/* -----------------------------------------------PestañaNosotros----------------------------------------------- */
+.nosotros-22{
+    background-color: #364c8f;
+
+}
+.sobrenosotros{
+    text-align: center;
+    background-color:aqua;
+    font-size: 35px;
+}
+.quienessomos{
+    text-align: center;
+    margin: 25px 175px;
+}
+.quienessomos p{
+    margin-top: 15px;
+}
+.nuestrocompromiso{
+    text-align: center;
+    margin: 25px 175px;
+}
+.nuestrocompromiso p{
+    margin-top: 25px;
+}
+.principios{
+    text-align: center;
+    margin: 0px 175px;
+}
+.principios h2{
+    margin-bottom: 25px;
+}
+
+/* -----------------------------------------------FinPestañaNosotros----------------------------------------------- */
+
+/* -----------------------------------------------PestañaServicios----------------------------------------------- */
+.servicios{
+    background-image: url(../img/fservicios.jpg);
+    background-size: cover;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.servicios1{
+    margin-left: 350px;
+    margin-bottom: 150px;
+    margin-right: 350px;
+}
+.servicios1 h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 45px;
+}
+.ptservicios{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.tpservicios{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.servicios p{
+    text-align: center;
+    
+}
+/* -----------------------------------------------FinPestañaServicios----------------------------------------------- */
