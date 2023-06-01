@@ -65,15 +65,90 @@ ul li a:hover{
     display: none;
 }
 
-@media (max-width: 952px){
+@media (max-width: 768px){
     .enlace{
         padding-left: 20px;
     }
     nav ul li a{
         font-size: 16px;
-    }    
-}
+    }
+    /*.titulomenu{
+        display: none;
+    }*/
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 1s;
 
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #e3eaf1;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 375px){
+    .enlace img{
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .titulomenu{
+        font-size: 10px;
+        position: relative;
+        width: 80px;
+        margin-left: 70px;        
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #e3eaf1;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
 /* ------------------------------------------------------menu--------------------------------------------- */
 /* -----------------------------------------------------pestañaIndex--------------------------------------------- */
 
@@ -108,9 +183,46 @@ body section{
     width: 800px;
     height: 400px;        
 }
+@media (max-width: 768px){
+    .maine{
+        height: 280px;
+        object-fit: cover;
+    }
+    .articulo1{
+        width: 480px;
+        height: 200px;        
+    }
+
+}
+@media (max-width: 375px){
+
+    .maine{
+        height: 280px;
+        object-fit: cover;
+        }
+    .articulo1{
+        width: 380px;
+        height: 200px;        
+        }
+    .titulo1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .titulo2{
+        font-size: 18px;
+    }
+    .text-1{
+        display: grid;
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+}
 /*------------------------------------------------finpestañaIndex--------------------------------------------*/
 
-/* -----------------------------------------------Pestañafooter----------------------------------------------- */
+/* -----------------------------------------------footer----------------------------------------------- */
 .pie-pagina{
     width: 100%;
     background-color: #1c2541;
@@ -168,10 +280,55 @@ body section{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-/* -----------------------------------------------FinPestañafooter----------------------------------------------- */
+@media (max-width:768px){
+    .box-2{
+        margin-right: 10px;
+        width: 100%;
+    }
+    .box h2{
+        text-align: center;
+    }
+    .box p{
+        text-align: center;
+    }
+    .red-social{
+        display: flex;
+        justify-content: center;
+    }
+    .pie-pagina .grupo-1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 35px 0px;  
+    }
+}
+@media (max-width:375px)
+{
+
+    .box-2{
+        margin-right: 10px;
+        width: 100%;
+    }
+    .box h2{
+        text-align: center;
+    }
+    .box p{
+        text-align: center;
+    }
+    .red-social{
+        display: flex;
+        justify-content: center;
+    }
+    .pie-pagina .grupo-1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 35px 0px;  
+    }
+         
+}
+/* -----------------------------------------------Finfooter----------------------------------------------- */
 
 
-/* -----------------------------------------------PestañaContacto----------------------------------------------- */
+/* -----------------------------------------------PestanaContacto----------------------------------------------- */
 .conteiner{
     display: flex;
     background-color: #5BC0BE;
@@ -234,7 +391,7 @@ body section{
     width: 50%;
     margin: 30px 15px;
 }
-.trabajos-1 h1{
+.trabajos-1 h2{
     text-align: center;
 }
 .trabajos-2 h2{
@@ -288,7 +445,7 @@ body section{
     margin-bottom: 150px;
     margin-right: 350px;
 }
-.servicios1 h1{
+.servicios1 h2{
     text-align: center;
     font-size: 45px;
     margin-bottom: 45px;
